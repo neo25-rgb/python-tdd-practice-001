@@ -1,7 +1,3 @@
-Here’s a clear README for your activity:
-
----
-
 # String and List Utility Functions
 
 This repository contains a set of Python functions that manipulate strings and lists in various ways. Your task is to **implement and thoroughly test** each function, including edge cases.
