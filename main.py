@@ -32,6 +32,9 @@ def increment_string(strng):
 
     if number == "":
         return prefix + "1"
+    
+    new_number=str(int(number)+1).zfill(len(number))
+    return prefix + new_number
 
 """
 implement the function below to :
@@ -39,7 +42,9 @@ implement the function below to :
     example: "aba" -> {"a": 2, "b": 1}
 """
 def count_letters(string):
-    #TODO implement here
+    counts={}
+    for char in string:
+        counts[char]=counts.get(char, 0)+1
     return {}
     
 """implement the function below to :
@@ -48,8 +53,9 @@ def count_letters(string):
     """
     
 def sum_consecutives(s):
-    #TODO implement here
-    return []
+    if len(s)<2:
+        return []
+    return [s[i]+s[i+1]for i in range(len(s)-1)]
     
 """implement the function below to :
     return the number of unique words in a string
