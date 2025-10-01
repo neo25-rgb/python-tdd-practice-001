@@ -45,7 +45,7 @@ def count_letters(string):
     counts={}
     for char in string:
         counts[char]=counts.get(char, 0)+1
-    return {}
+    return counts
     
 """implement the function below to :
     return a list of sums of each consecutive pair in the list
