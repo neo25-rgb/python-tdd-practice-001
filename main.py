@@ -1,3 +1,4 @@
+
 """Your job is to write a function which increments a string, to create a new string.
 
     If the string already ends with a number, the number should be incremented by 1.
@@ -22,8 +23,15 @@ def increment_string(strng):
         return "1"
     
     #TODO implement here
-    
-    return ""
+    i =len(strng)-1
+    while i >=0 and strng[i].isdigit():
+        i-=1
+
+    prefix=strng[:i+1]
+    number=strng[i+1:]
+
+    if number == "":
+        return prefix + "1"
 
 """
 implement the function below to :
